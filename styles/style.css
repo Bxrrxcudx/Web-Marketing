@@ -1,0 +1,311 @@
+@charset 'UTF-8';
+
+/*Jaune  :  #FFD945
+Rouge : #FE5A59
+Bleu-vert : #3AB3BF
+Blanc : #F4F4F8*/
+
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Arial, sans-serif, Helvetica;
+	list-style: none;
+	text-decoration: none;
+}
+
+a {
+	color: #000;
+}
+
+.cf:before,
+.cf:after {
+	display: table;
+	content: ' ';
+}
+.cf:after {
+	clear: both;
+}
+
+.view1 {
+	transform: skew(0deg ,deg);
+	background: green;
+}
+
+.btn-download {
+	display: inline-flex;
+	padding: 1% 0;
+	border-radius: 20px;
+	background: #3AB3BF;
+	justify-content: space-around;
+	align-items: center;
+	transition: .2s ease-in-out;
+	box-shadow: -2px 7px 15px -3px rgba(0,0,0,0.75);
+}
+
+.btn-download:hover {
+	box-shadow: none;
+}
+
+.btn-download img {
+	width: 10%;
+}
+
+.w30 {
+	width: 30%;
+}
+
+.w30 img {
+	width: 100%;
+}
+
+.w70 {
+	width: 70%;
+}
+
+.appear {
+	left: 0;
+}
+
+body {
+	max-width: 1920px;
+	margin: 0 auto;
+	background: #F4F4F8;
+}
+
+/*----- HEADER---------------*/
+header {
+	position: relative;
+	width: 90%;
+	margin: 0 auto;
+	padding: 1% 0 2% 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .burger-menu {
+	display: none;
+	position: relative;
+	height: 40px;
+	width: 45px;
+}
+
+.rect1,
+.rect2,
+.rect3 {
+	height: 20%;
+	width: 100%;
+	background: #3AB3BF;
+}
+
+.rect1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.rect2 {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+
+
+.rect3 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+header h1 {
+	width: 30%;
+}
+
+header h1 a {
+	
+}
+
+header h1 a img {
+	width: 30%;
+}
+
+header nav {
+	width: 70%;
+}
+
+header nav ul {
+	width: 50%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+header nav ul li {
+	display: inline-block;
+}
+
+header nav ul li a {
+
+}
+
+/*----- MAIN---------------*/
+main {
+
+}
+
+main section {
+	height: 60vh;
+	display: flex;
+	align-items: center;
+}
+
+.app,
+.professional {
+	background: #FFD945;
+}
+
+.profits {
+	background: #FE5A59;
+}
+
+.events {
+	background: #3AB3BF;
+}
+
+section .content {
+	width: 90%;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.app-content-text,
+.friends-content-text,
+.profits-content-text,
+.professional-content-text,
+.events-content-text,
+.localisation-content-text {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.content h2 {
+	margin-bottom: 3%;
+	text-align: center;
+}
+
+.content p {
+	text-align: center;
+}
+
+.download {
+	margin-top: 3%;
+	display: flex;
+	justify-content: space-around;
+}
+
+/*----- FOOTER---------------*/
+footer {
+	height: 10vh;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*----- BREAKPOINT Tablettes---------------*/
+@media screen and ( max-width: 768px) {
+	
+}
+
+/*----- BREAKPOINT Smartphones---------------*/
+@media screen and ( max-width: 400px) {
+
+	.w30 {
+		width: 60%;
+	}
+
+	body {
+		background: #888;
+	}
+
+	header {
+		padding: 0;
+	}
+
+	header h1 {
+		display: block;
+		width: 50%;
+	}
+
+	header h1 a img {
+	    width: 60%;
+	}
+
+	header nav {
+		position: absolute;
+		left: -100%;
+		width: 70%;
+		background: green;
+		transition: .5s ease-in-out;
+	}
+
+	header nav ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	header .burger-menu {
+		display: block;
+		cursor: pointer;
+	}
+
+	main section {
+		height: 90vh;
+	}
+
+	.content {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.app-content-text, 
+	.friends-content-text,
+	.profits-content-text,
+	.professional-content-text, 
+	.events-content-text,
+	.localisation-content-text {
+		width: 100%;
+	}
+
+	.app-content-text {
+		margin-top: -12%;
+	}
+
+	.app-content-text p {
+		margin-bottom: 9%;
+	}
+
+	.download {
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.btn-download {
+		margin: 3% 0;
+	}
+
+	.friends .content,
+	.professional .content,
+	.events .content {
+		flex-direction: column-reverse;
+	}
+}
