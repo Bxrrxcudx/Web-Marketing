@@ -1,7 +1,7 @@
 # Web-Marketing
 ## Informations
 
-Création d'un buiseness plan avec un site vitrine.
+Création d'un business plan avec un site vitrine.
 
 Technologies Utilisées:
   - JavaScript
